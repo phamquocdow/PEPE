@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEPE - Mạng xã hội học tập PTIT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-[#C00000] rounded-lg flex items-center justify-center">
+                        <span class="text-xl font-bold text-white">P</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">PEPE</h1>
+                        <p class="text-xs text-gray-500">Học tập thông minh</p>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Trang chủ</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Tài liệu</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Đề thi</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Cộng đồng</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Liên hệ</a>
+                </nav>
+
+                <div class="flex space-x-3">
+                    <a href="login.html" class="px-4 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition-colors font-medium">
+                    Đăng nhập
+                    </a>
+            
+                    <a href="login.html" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                    Đăng ký
+                    </a>
+                </div>
+
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="gradient-bg py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Học tập thông minh với 
+                        <span class="text-yellow-300">PEPE</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-blue-100 leading-relaxed">
+                        Mạng xã hội học tập hiện đại - Nơi chia sẻ tài liệu, đề thi và kết nối với cộng đồng học sinh, sinh viên PTIT.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="login.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg text-center">
+                            Bắt đầu ngay
+                        </a>
+                        <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+                            📖 Khám phá tài liệu
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="floating-animation">
+                        <div class="bg-white rounded-2xl p-8 shadow-2xl">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-2xl">📚</span>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Toán rời rạc</h3>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-600">Đề thi thử </span>
+                                    <span class="text-green-500 text-sm font-medium">⭐ 4.8</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute top-20 right-20 w-32 h-32 bg-white bg-opacity-10 rounded-full"></div>
+        <div class="absolute bottom-20 left-20 w-20 h-20 bg-yellow-300 bg-opacity-20 rounded-full"></div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Tài liệu nổi bật</h2>
+                <p class="text-xl text-gray-600">Những tài liệu được đánh giá cao nhất từ cộng đồng</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg card-hover p-6">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Kiến trúc máy tính</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Lý thuyết và bài tập về Kiến trúc máy tính.</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Tải xuống
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg card-hover p-6">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Toán rời rạc 1</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Lý thuyết và bài tập về Toán rời rạc 1.</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Tải xuống
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg card-hover p-6">
+                    <div class="flex items-center mb-4">
+                        <div>
+                            <h3 class="font-semibold text-gray-800">Vật lý đại cương</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Lý thuyết và bài tập về vật lý đại cương.</p>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Tải xuống
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-white text-blue-600 border-2 border-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors">
+                    Xem tất cả tài liệu
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Đề thi mới nhất</h2>
+                <p class="text-xl text-gray-600">Cập nhật liên tục các đề thi thử và đề thi chính thức</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl p-6 text-white">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Đề thi KTMT(CLC) 2025</h3>
+                        </div>
+                        <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">Mới</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <span class="mr-4">⏱️ 90 phút</span>
+                            <span class="mr-4">📊 50 câu</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Làm bài ngay
+                    </button>
+                </div>
+
+                <div class="bg-gradient-to-r from-green-500 to-teal-500 rounded-xl p-6 text-white">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Đề thi nhập môn CNPM 2024</h3>
+                        </div>
+                        <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">Hot</span>
+                    </div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <span class="mr-4">⏱️ 60 phút</span>
+                            <span class="mr-4">📊 50 câu</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-white text-green-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        Làm bài ngay
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    Xem tất cả đề thi
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gradient-bg py-20">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-6">
+                Sẵn sàng bắt đầu hành trình học tập?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Tham gia cộng đồng sinh PTIT viên đang học tập hiệu quả cùng PEPE
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                    Đăng ký miễn phí
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors">
+                    Tìm hiểu thêm
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <span class="text-xl font-bold">P</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">PEPE</h3>
+                            <p class="text-sm text-gray-400">Học tập thông minh</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">Mạng xã hội học tập hàng đầu Việt Nam</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Sản phẩm</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Tài liệu học tập</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Đề thi thử</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Cộng đồng</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Ứng dụng mobile</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Hỗ trợ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Trung tâm trợ giúp</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Liên hệ</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Báo cáo lỗi</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Góp ý</a></li>
+                    </ul>
+                </div>
+            <div class="text-center">
+  <h4 class="font-semibold mb-4 text-lg text-white">Theo dõi chúng tôi</h4>
+  <div class="flex flex-col items-center space-y-4">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/pham.hung.692615"
+       target="_blank"
+       class="flex items-center justify-center w-48 h-12 bg-blue-600 text-white font-medium rounded-xl shadow-md hover:bg-blue-700 transition">
+      <!-- Icon FB -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5 mr-2">
+        <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-2.9h2v-2.2c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2v2h2.2l-.4 2.9h-1.8v7A10 10 0 0 0 22 12"/>
+      </svg>
+      <span>Facebook</span>
+    </a>
+
+    <!-- Số điện thoại -->
+    <a href="tel:0836240905"
+       class="flex items-center justify-center w-48 h-12 bg-gray-700 text-white font-medium rounded-xl shadow-md hover:bg-gray-600 transition">
+      <!-- Icon điện thoại -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.443a1.5 1.5 0 0 0-1.281-1.484l-3.423-.488a1.5 1.5 0 0 0-1.482.864l-.723 1.447a12.035 12.035 0 0 1-6.813-6.813l1.447-.723a1.5 1.5 0 0 0 .864-1.482l-.488-3.423A1.5 1.5 0 0 0 9.943 2.25H8.5A2.25 2.25 0 0 0 6.25 4.5v2.25z" />
+      </svg>
+      <span>0836 240 905</span>
+    </a>
+  </div>
+</div>
+
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 PEPE. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        document.querySelectorAll('button, a').forEach(element => {
+            element.addEventListener('click', function(e) {
+                const text = this.textContent.trim();
+                if (text.includes('Đăng nhập') || text.includes('Đăng ký')) {
+                    if (this.tagName === 'A') e.preventDefault();
+                    alert('🎯 Chuyển hướng đến trang đăng nhập/đăng ký!');
+                } else if (text.includes('Tải xuống') || text.includes('Làm bài')) {
+                    if (this.tagName === 'A') e.preventDefault();
+                    alert('📚 Tính năng này sẽ có sau khi đăng nhập!');
+                }
+            });
+        });
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>

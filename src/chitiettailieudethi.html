@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEPE - Chi Tiết Tài Liệu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- Header -->
+    <header class="bg-white/10 backdrop-blur-md border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <button onclick="goBack()" class="text-white hover:text-blue-200 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                        <span class="text-2xl">🐸</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-white">PEPE - Chi Tiết Tài Liệu</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="text-white text-sm">
+                        <span class="font-semibold" id="userCoins">2,475</span> 🪙
+                    </div>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                        🔍 Tìm Kiếm
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Content -->
+            <div class="lg:col-span-2">
+                <!-- Document Header -->
+                <div class="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 mb-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center">
+                                <span class="text-white text-2xl">📊</span>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold text-white mb-2">Đề Thi Toán Cao Cấp A1 - Học Kỳ 1</h1>
+                                <div class="flex items-center space-x-4 text-blue-100 text-sm">
+                                    <span>📅 Đăng ngày: 15/12/2024</span>
+                                    <span>👁️ 1,250 lượt xem</span>
+                                    <span>📥 890 lượt tải</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <span class="text-green-400 text-lg">✅</span>
+                            <span class="text-blue-100 text-sm">Đã duyệt</span>
+                        </div>
+                    </div>
+
+                    <!-- Author Info -->
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-blue-300 rounded-full flex items-center justify-center">
+                                <span class="text-blue-800 font-bold">NA</span>
+                            </div>
+                            <div>
+                                <p class="text-white font-semibold">GV. Nguyễn Văn A</p>
+                                <p class="text-blue-100 text-sm">Khoa Toán - Tin học</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center space-x-1">
+                                <span class="text-yellow-300 text-lg">⭐</span>
+                                <span class="text-white font-bold">4.8</span>
+                                <span class="text-blue-200 text-sm">(124 đánh giá)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Preview -->
+                <div class="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 mb-6">
+                    <h3 class="text-xl font-bold text-white mb-4">📖 Xem Trước Tài Liệu</h3>
+                    
+                    <div class="bg-gray-100 rounded-lg p-4">
+                        <div id="documentPreview" class="preview-page">
+                            <div id="page1" class="page-content">
+                                <h2 style="color: #1e40af; text-align: center; margin-bottom: 20px;">ĐỀ THI TOÁN CAO CẤP A1</h2>
+                                <h3 style="color: #374151; text-align: center; margin-bottom: 30px;">Học kỳ I - Năm học 2024-2025</h3>
+                                
+                                <div style="margin-bottom: 20px;">
+                                    <strong>Thời gian:</strong> 90 phút (không kể thời gian phát đề)<br>
+                                    <strong>Đề số:</strong> 001
+                                </div>
+
+                                <div style="margin-bottom: 25px;">
+                                    <h4 style="color: #1e40af; margin-bottom: 15px;"><strong>Câu 1 (2 điểm):</strong></h4>
+                                    <p>Tính các giới hạn sau:</p>
+                                    <div style="margin-left: 20px; margin-top: 10px;">
+                                        <p>a) lim(x→∞) (3x² + 2x - 1)/(2x² - x + 3)</p>
+                                        <p>b) lim(x→0) (sin(3x))/(2x)</p>
+                                    </div>
+                                </div>
+
+                                <div style="margin-bottom: 25px;">
+                                    <h4 style="color: #1e40af; margin-bottom: 15px;"><strong>Câu 2 (3 điểm):</strong></h4>
+                                    <p>Cho hàm số f(x) = x³ - 3x² + 2x + 1</p>
+                                    <div style="margin-left: 20px; margin-top: 10px;">
+                                        <p>a) Tìm đạo hàm f'(x)</p>
+                                        <p>b) Tìm các điểm cực trị của hàm số</p>
+                                        <p>c) Khảo sát và vẽ đồ thị hàm số</p>
+                                    </div>
+                                </div>
+
+                                <div style="margin-bottom: 25px;">
+                                    <h4 style="color: #1e40af; margin-bottom: 15px;"><strong>Câu 3 (2.5 điểm):</strong></h4>
+                                    <p>Tính tích phân sau:</p>
+                                    <div style="margin-left: 20px; margin-top: 10px;">
+                                        <p>∫₀² (x² + 2x + 1) dx</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="page2" class="page-content" style="display: none;">
+                                <h3 style="color: #1e40af; text-align: center; margin-bottom: 30px;">ĐÁP ÁN CHI TIẾT</h3>
+                                
+                                <div style="margin-bottom: 25px;">
+                                    <h4 style="color: #1e40af; margin-bottom: 15px;"><strong>Câu 1:</strong></h4>
+                                    <p><strong>a)</strong> lim(x→∞) (3x² + 2x - 1)/(2x² - x + 3)</p>
+                                    <div style="margin-left: 20px; color: #374151;">
+                                        <p>Chia cả tử và mẫu cho x²:</p>
+                                        <p>= lim(x→∞) (3 + 2/x - 1/x²)/(2 - 1/x + 3/x²)</p>
+                                        <p>= (3 + 0 - 0)/(2 - 0 + 0) = 3/2</p>
+                                    </div>
+                                    
+                                    <p style="margin-top: 15px;"><strong>b)</strong> lim(x→0) (sin(3x))/(2x)</p>
+                                    <div style="margin-left: 20px; color: #374151;">
+                                        <p>= lim(x→0) (3sin(3x))/(6x) × 3/2</p>
+                                        <p>= 3/2 × lim(x→0) sin(3x)/(3x) × 3</p>
+                                        <p>= 3/2 × 1 = 3/2</p>
+                                    </div>
+                                </div>
+
+                                <div style="margin-bottom: 25px;">
+                                    <h4 style="color: #1e40af; margin-bottom: 15px;"><strong>Câu 2:</strong></h4>
+                                    <p><strong>a)</strong> f'(x) = 3x² - 6x + 2</p>
+                                    
+                                    <p style="margin-top: 15px;"><strong>b)</strong> Tìm điểm cực trị:</p>
+                                    <div style="margin-left: 20px; color: #374151;">
+                                        <p>f'(x) = 0 ⟺ 3x² - 6x + 2 = 0</p>
+                                        <p>Δ = 36 - 24 = 12 > 0</p>
+                                        <p>x₁ = (6 + 2√3)/6, x₂ = (6 - 2√3)/6</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-navigation">
+                            <button id="prevPage" onclick="changePage(-1)" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors disabled:opacity-50" disabled>
+                                ← Trang trước
+                            </button>
+                            <span class="text-gray-600 mx-4">
+                                Trang <span id="currentPage">1</span> / <span id="totalPages">2</span>
+                            </span>
+                            <button id="nextPage" onclick="changePage(1)" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                                Trang sau →
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 p-4 bg-yellow-100 border-l-4 border-yellow-400 rounded">
+                        <p class="text-yellow-800 text-sm">
+                            <strong>📝 Lưu ý:</strong> Đây chỉ là bản xem trước 2 trang đầu. Tài liệu đầy đủ có 20 trang bao gồm đề thi và đáp án chi tiết.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 mb-6">
+                    <h3 class="text-xl font-bold text-white mb-4">📋 Mô Tả Chi Tiết</h3>
+                    <div class="text-blue-100 space-y-3">
+                        <p>Bộ đề thi Toán Cao Cấp A1 được biên soạn bởi đội ngũ giảng viên có kinh nghiệm, phù hợp cho sinh viên các ngành kỹ thuật.</p>
+                        
+                        <p><strong>Nội dung bao gồm:</strong></p>
+                        <ul class="list-disc list-inside ml-4 space-y-1">
+                            <li>20 đề thi đa dạng với độ khó tăng dần</li>
+                            <li>Đáp án chi tiết với lời giải từng bước</li>
+                            <li>Công thức tóm tắt quan trọng</li>
+                            <li>Mẹo giải nhanh các dạng bài thường gặp</li>
+                            <li>Bài tập tự luyện thêm</li>
+                        </ul>
+
+                        <p><strong>Phù hợp cho:</strong></p>
+                        <ul class="list-disc list-inside ml-4 space-y-1">
+                            <li>Sinh viên năm nhất các ngành kỹ thuật</li>
+                            <li>Ôn tập chuẩn bị thi cuối kỳ</li>
+                            <li>Tự học và nâng cao kiến thức</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Comments Section -->
+                <div class="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20">
+                    <h3 class="text-xl font-bold text-white mb-6">💬 Bình Luận & Góp Ý</h3>
+                    
+                    <!-- Add Comment Form -->
+                    <div class="mb-6">
+                        <textarea id="commentText" placeholder="Chia sẻ ý kiến, góp ý hoặc báo lỗi sai..." 
+                                  class="w-full bg-white/20 border border-white/30 rounded-lg px-4 py-3 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none" 
+                                  rows="3"></textarea>
+                        <div class="flex justify-between items-center mt-3">
+                            <div class="flex items-center space-x-4">
+                                <label class="flex items-center space-x-2 text-blue-100">
+                                    <input type="checkbox" id="reportError" class="rounded">
+                                    <span class="text-sm">🚨 Báo lỗi sai</span>
+                                </label>
+                            </div>
+                            <button onclick="addComment()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">
+                                Gửi Bình Luận
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Comments List -->
+                    <div id="commentsList" class="space-y-4">
+                        <!-- Comment 1 -->
+                        <div class="comment-item bg-white/10 rounded-lg p-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-green-800 text-sm font-bold">TM</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center space-x-2 mb-2">
+                                        <span class="text-white font-semibold">Trần Minh B</span>
+                                        <span class="text-blue-200 text-xs">2 ngày trước</span>
+                                        <div class="flex items-center space-x-1">
+                                            <span class="text-yellow-300">⭐⭐⭐⭐⭐</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-blue-100 text-sm mb-2">
+                                        Tài liệu rất chi tiết và dễ hiểu! Đáp án có lời giải từng bước giúp mình hiểu rõ cách làm. Cảm ơn thầy đã chia sẻ!
+                                    </p>
+                                    <div class="flex items-center space-x-4 text-xs">
+                                        <button class="text-blue-300 hover:text-white transition-colors">👍 Hữu ích (12)</button>
+                                        <button class="text-blue-300 hover:text-white transition-colors">💬 Trả lời</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 -->
+                        <div class="comment-item bg-white/10 rounded-lg p-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-purple-800 text-sm font-bold">LT</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center space-x-2 mb-2">
+                                        <span class="text-white font-semibold">Lê Thị C</span>
+                                        <span class="text-blue-200 text-xs">1 tuần trước</span>
+                                        <div class="flex items-center space-x-1">
+                                            <span class="text-yellow-300">⭐⭐⭐⭐</span>
+                                        </div>
+                                        <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">🚨 Báo lỗi</span>
+                                    </div>
+                                    <p class="text-blue-100 text-sm mb-2">
+                                        Tài liệu tốt nhưng có một chỗ sai nhỏ ở câu 3 đề số 5. Kết quả phải là 14/3 chứ không phải 13/3. Mong thầy kiểm tra lại.
+                                    </p>
+                                    <div class="flex items-center space-x-4 text-xs">
+                                        <button class="text-blue-300 hover:text-white transition-colors">👍 Hữu ích (8)</button>
+                                        <button class="text-blue-300 hover:text-white transition-colors">💬 Trả lời</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="comment-item bg-white/10 rounded-lg p-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-orange-800 text-sm font-bold">HM</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center space-x-2 mb-2">
+                                        <span class="text-white font-semibold">Hoàng Minh D</span>
+                                        <span class="text-blue-200 text-xs">3 ngày trước</span>
+                                        <div class="flex items-center space-x-1">
+                                            <span class="text-yellow-300">⭐⭐⭐⭐⭐</span>
+                                        </div>
+                                    </div>
+                                    <p class="text-blue-100 text-sm mb-2">
+                                        Đề thi sát với đề thi thật! Mình đã luyện tập với bộ đề này và đạt điểm cao trong kỳ thi. Rất recommend!
+                                    </p>
+                                    <div class="flex items-center space-x-4 text-xs">
+                                        <button class="text-blue-300 hover:text-white transition-colors">👍 Hữu ích (15)</button>
+                                        <button class="text-blue-300 hover:text-white transition-colors">💬 Trả lời</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-6">
+                        <button class="text-blue-300 hover:text-white transition-colors">
+                            📄 Xem thêm bình luận
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+                <!-- Download Card -->
+                <div class="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 mb-6 sticky top-4">
+                    <div class="text-center mb-6">
+                        <div class="text-4xl font-bold text-green-300 mb-2">50 Coin</div>
+                        <p class="text-blue-100 text-sm">Giá tải về</p>
+                    </div>
+
+                    <button id="downloadBtn" onclick="downloadDocument()" class="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 mb-4">
+                        📥 Tải Về Ngay
+                    </button>
+
+                    <div class="text-center mb-4">
+                        <p class="text-blue-100 text-sm">Hoặc</p>
+                    </div>
+
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors mb-6">
+                        ❤️ Thêm vào Yêu thích
+                    </button>
+
+                    <!-- File Info -->
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-blue-200">📄 Định dạng:</span>
+                            <span class="text-white">PDF</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-blue-200">📏 Kích thước:</span>
+                            <span class="text-white">2.5 MB</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-blue-200">📖 Số trang:</span>
+                            <span class="text-white">20 trang</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-blue-200">🔒 Bảo mật:</span>
+                            <span class="text-green-300">An toàn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rating Card -->
+                <div class="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20 mb-6">
+                    <h3 class="text-lg font-bold text-white mb-4">⭐ Đánh Giá Tài Liệu</h3>
+                    
+                    <div class="text-center mb-4">
+                        <div class="text-3xl font-bold text-white mb-1">4.8</div>
+                        <div class="flex justify-center mb-2">
+                            <span class="text-yellow-300 text-xl">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <p class="text-blue-100 text-sm">124 đánh giá</p>
+                    </div>
+
+                    <div class="space-y-2 mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-blue-100 text-sm w-6">5⭐</span>
+                            <div class="flex-1 bg-white/20 rounded-full h-2">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                            <span class="text-blue-100 text-sm">93</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-blue-100 text-sm w-6">4⭐</span>
+                            <div class="flex-1 bg-white/20 rounded-full h-2">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 20%"></div>
+                            </div>
+                            <span class="text-blue-100 text-sm">25</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-blue-100 text-sm w-6">3⭐</span>
+                            <div class="flex-1 bg-white/20 rounded-full h-2">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 4%"></div>
+                            </div>
+                            <span class="text-blue-100 text-sm">5</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-blue-100 text-sm w-6">2⭐</span>
+                            <div class="flex-1 bg-white/20 rounded-full h-2">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 1%"></div>
+                            </div>
+                            <span class="text-blue-100 text-sm">1</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-blue-100 text-sm w-6">1⭐</span>
+                            <div class="flex-1 bg-white/20 rounded-full h-2">
+                                <div class="bg-yellow-400 h-2 rounded-full" style="width: 0%"></div>
+                            </div>
+                            <span class="text-blue-100 text-sm">0</span>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-white/20 pt-4">
+                        <p class="text-blue-100 text-sm mb-3">Đánh giá của bạn:</p>
+                        <div class="star-rating justify-center mb-3" id="userRating">
+                            <span class="star" data-rating="1">⭐</span>
+                            <span class="star" data-rating="2">⭐</span>
+                            <span class="star" data-rating="3">⭐</span>
+                            <span class="star" data-rating="4">⭐</span>
+                            <span class="star" data-rating="5">⭐</span>
+                        </div>
+                        <button id="submitRating" onclick="submitRating()" class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
+                            Gửi Đánh Giá
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Related Documents -->
+                <div class="bg-white/15 backdrop-blur-md rounded-xl p-6 border border-white/20">
+                    <h3 class="text-lg font-bold text-white mb-4">📚 Tài Liệu Liên Quan</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3 card-hover cursor-pointer p-3 rounded-lg">
+                            <div class="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-white">📊</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-white text-sm font-semibold mb-1">Toán Cao Cấp A2</h4>
+                                <p class="text-blue-200 text-xs mb-1">15 đề thi + đáp án</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-yellow-300 text-xs">⭐ 4.7</span>
+                                    <span class="text-green-300 text-xs font-bold">60 Coin</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3 card-hover cursor-pointer p-3 rounded-lg">
+                            <div class="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-white">📊</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-white text-sm font-semibold mb-1">Giải Tích 1</h4>
+                                <p class="text-blue-200 text-xs mb-1">Lý thuyết + bài tập</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-yellow-300 text-xs">⭐ 4.9</span>
+                                    <span class="text-green-300 text-xs font-bold">45 Coin</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-3 card-hover cursor-pointer p-3 rounded-lg">
+                            <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <span class="text-white">📊</span>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-white text-sm font-semibold mb-1">Đại Số Tuyến Tính</h4>
+                                <p class="text-blue-200 text-xs mb-1">Ma trận & định thức</p>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-yellow-300 text-xs">⭐ 4.6</span>
+                                    <span class="text-green-300 text-xs font-bold">55 Coin</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentPageNum = 1;
+        let totalPagesNum = 2;
+        let userRatingValue = 0;
+
+        // Page navigation
+        function changePage(direction) {
+            const newPage = currentPageNum + direction;
+            if (newPage >= 1 && newPage <= totalPagesNum) {
+                document.getElementById(`page${currentPageNum}`).style.display = 'none';
+                document.getElementById(`page${newPage}`).style.display = 'block';
+                
+                currentPageNum = newPage;
+                document.getElementById('currentPage').textContent = currentPageNum;
+                
+                // Update navigation buttons
+                document.getElementById('prevPage').disabled = currentPageNum === 1;
+                document.getElementById('nextPage').disabled = currentPageNum === totalPagesNum;
+            }
+        }
+
+        // Download functionality
+        function downloadDocument() {
+            const userCoins = parseInt(document.getElementById('userCoins').textContent);
+            const documentPrice = 50;
+            
+            if (userCoins >= documentPrice) {
+                if (confirm(`Bạn có chắc muốn tải tài liệu này với giá ${documentPrice} coin không?`)) {
+                    // Simulate download process
+                    const btn = document.getElementById('downloadBtn');
+                    btn.innerHTML = '⏳ Đang tải...';
+                    btn.disabled = true;
+                    
+                    setTimeout(() => {
+                        // Update user coins
+                        const newCoins = userCoins - documentPrice;
+                        document.getElementById('userCoins').textContent = newCoins;
+                        
+                        // Show success message
+                        alert('🎉 Tải xuống thành công!\n\nTài liệu đã được lưu vào thư mục "Tài liệu của tôi".\nCảm ơn bạn đã sử dụng PEPE!');
+                        
+                        // Update button
+                        btn.innerHTML = '✅ Đã Tải Về';
+                        btn.classList.remove('from-green-500', 'to-green-600', 'hover:from-green-600', 'hover:to-green-700');
+                        btn.classList.add('bg-gray-500');
+                    }, 2000);
+                }
+            } else {
+                alert(`❌ Không đủ coin!\n\nBạn cần ${documentPrice} coin để tải tài liệu này.\nHiện tại bạn có ${userCoins} coin.\n\nHãy kiếm thêm coin bằng cách điểm danh hằng ngày hoặc đăng tài liệu!`);
+            }
+        }
+
+        // Rating functionality
+        document.querySelectorAll('.star').forEach(star => {
+            star.addEventListener('click', function() {
+                userRatingValue = parseInt(this.dataset.rating);
+                updateStarDisplay();
+            });
+            
+            star.addEventListener('mouseover', function() {
+                const rating = parseInt(this.dataset.rating);
+                highlightStars(rating);
+            });
+        });
+
+        document.getElementById('userRating').addEventListener('mouseleave', function() {
+            updateStarDisplay();
+        });
+
+        function highlightStars(rating) {
+            document.querySelectorAll('.star').forEach((star, index) => {
+                if (index < rating) {
+                    star.classList.add('active');
+                } else {
+                    star.classList.remove('active');
+                }
+            });
+        }
+
+        function updateStarDisplay() {
+            highlightStars(userRatingValue);
+        }
+
+        function submitRating() {
+            if (userRatingValue === 0) {
+                alert('⭐ Vui lòng chọn số sao đánh giá!');
+                return;
+            }
+            
+            const btn = document.getElementById('submitRating');
+            btn.innerHTML = '⏳ Đang gửi...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                alert(`🎉 Cảm ơn bạn đã đánh giá ${userRatingValue} sao!\n\nĐánh giá của bạn sẽ giúp cải thiện chất lượng tài liệu.`);
+                btn.innerHTML = '✅ Đã Đánh Giá';
+                btn.classList.remove('bg-yellow-500', 'hover:bg-yellow-600');
+                btn.classList.add('bg-gray-500');
+            }, 1500);
+        }
+
+        // Comment functionality
+        function addComment() {
+            const commentText = document.getElementById('commentText').value.trim();
+            const isReportError = document.getElementById('reportError').checked;
+            
+            if (!commentText) {
+                alert('📝 Vui lòng nhập nội dung bình luận!');
+                return;
+            }
+            
+            // Create new comment element
+            const commentsList = document.getElementById('commentsList');
+            const newComment = document.createElement('div');
+            newComment.className = 'comment-item bg-white/10 rounded-lg p-4';
+            
+            const errorBadge = isReportError ? '<span class="bg-red-500 text-white text-xs px-2 py-1 rounded">🚨 Báo lỗi</span>' : '';
+            
+            newComment.innerHTML = `
+                <div class="flex items-start space-x-3">
+                    <div class="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="text-blue-800 text-sm font-bold">BN</span>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <span class="text-white font-semibold">Bạn</span>
+                            <span class="text-blue-200 text-xs">Vừa xong</span>
+                            ${errorBadge}
+                        </div>
+                        <p class="text-blue-100 text-sm mb-2">${commentText}</p>
+                        <div class="flex items-center space-x-4 text-xs">
+                            <button class="text-blue-300 hover:text-white transition-colors">👍 Hữu ích (0)</button>
+                            <button class="text-blue-300 hover:text-white transition-colors">💬 Trả lời</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            commentsList.insertBefore(newComment, commentsList.firstChild);
+            
+            // Clear form
+            document.getElementById('commentText').value = '';
+            document.getElementById('reportError').checked = false;
+            
+            // Show success message
+            const message = isReportError ? 
+                '🚨 Báo lỗi đã được gửi! Cảm ơn bạn đã góp ý.' : 
+                '💬 Bình luận đã được đăng thành công!';
+            alert(message);
+        }
+
+        // Back button
+        function goBack() {
+            if (confirm('Bạn có muốn quay lại trang tìm kiếm không?')) {
+                alert('🔙 Đang chuyển về trang tìm kiếm...');
+            }
+        }
+
+        // Related documents click handlers
+        document.querySelectorAll('.card-hover.cursor-pointer').forEach(card => {
+            card.addEventListener('click', function() {
+                const title = this.querySelector('h4').textContent;
+                alert(`📚 Đang mở: ${title}\n\nTính năng này sẽ được phát triển!`);
+            });
+        });
+
+        // Other button handlers
+        document.querySelectorAll('button').forEach(button => {
+            if (!button.onclick && !button.id) {
+                button.addEventListener('click', function() {
+                    const text = this.textContent.trim();
+                    if (text.includes('Yêu thích')) {
+                        alert('❤️ Đã thêm vào danh sách yêu thích!');
+                    } else if (text.includes('Tìm Kiếm')) {
+                        alert('🔍 Chuyển đến trang tìm kiếm...');
+                    } else if (text.includes('Hữu ích') || text.includes('Trả lời')) {
+                        alert('💬 Tính năng tương tác bình luận đang được phát triển!');
+                    }
+                });
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'988362bdb7dd0452',t:'MTc1OTM5OTU3Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
