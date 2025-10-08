@@ -13,5 +13,6 @@ A web forum
 git clone https://github.com/phamquocdow/PEPE.git
 cd PEPE
 pip install -r requirements.txt
-python manage.py runserver 
+python manage.py migrate
+python manage.py runserver
 ```
