@@ -2,7 +2,7 @@
 
 A web forum
 
-## Dependencies
+## Requirements
 
 - [Python 3.13](https://www.python.org/downloads/)
 - [Django 5.2](https://www.djangoproject.com/download/) - Web Framework
