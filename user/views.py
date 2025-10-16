@@ -1,5 +1,5 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 
-def user(request):
-    return HttpResponse("User")
+def index(request):
+    return render(request, 'user/index.html')

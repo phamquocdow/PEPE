@@ -1,5 +1,5 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 
-def forum(request):
-    return HttpResponse("Forum")
+def index(request):
+    return render(request, 'forum/index.html')
